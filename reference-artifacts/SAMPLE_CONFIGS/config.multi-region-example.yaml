@@ -1,17 +1,17 @@
 # @section: global-options
 # @description:
 # @settings:
-#   - alz-baseline: 
-#   - ct-baseline: 
-#   - default-s3-retention: 
-#   - central-bucket: 
-#   - organization-admin-role: 
-#   - default-cwl-retention: 
-#   - workloadaccounts-suffix: 
-#   - workloadaccounts-prefix: 
-#   - workloadaccounts-param-filename: 
-#   - ignored-ous: 
-#   - additional-global-output-regions: 
+#     alz-baseline: useful information you write here about this setting  
+#     ct-baseline: 
+#     default-s3-retention: 
+#     central-bucket: 
+#     organization-admin-role: 
+#     default-cwl-retention: 
+#     workloadaccounts-suffix: 
+#     workloadaccounts-prefix: 
+#     workloadaccounts-param-filename: 
+#     ignored-ous: 
+#     additional-global-output-regions: 
 global-options:
   alz-baseline: false
   ct-baseline: false
@@ -46,8 +46,8 @@ global-options:
   # @section: aws-org-master
   # @description:
   # @settings:
-  #   - account
-  #   - region
+  #     account
+  #     region
   aws-org-master:
     account: master
     region: ca-central-1
@@ -55,20 +55,20 @@ global-options:
   # @section: central-security-services
   # @description:
   # @settings:
-  #   - account: 
-  #   - region: 
-  #   - security-hub-excl-regions: 
-  #   - guardduty: 
-  #   - guardduty-excl-regions: 
-  #   - guardduty-s3: 
-  #   - guardduty-s3-excl-regions: 
-  #   - cwl: 
-  #   - access-analyzer: 
-  #   - config-excl-regions: 
-  #   - config-aggr-excl-regions: 
-  #   - macie:
-  #   - macie-excl-regions:
-  #   - macie-frequency: 
+  #     account: 
+  #     region: 
+  #     security-hub-excl-regions: 
+  #     guardduty: 
+  #     guardduty-excl-regions: 
+  #     guardduty-s3: 
+  #     guardduty-s3-excl-regions: 
+  #     cwl: 
+  #     access-analyzer: 
+  #     config-excl-regions: 
+  #     config-aggr-excl-regions: 
+  #     macie:
+  #     macie-excl-regions:
+  #     macie-frequency: 
   central-security-services:
     account: security
     region: ca-central-1
@@ -88,10 +88,10 @@ global-options:
   # @section: central-operations-services
   # @description:
   # @settings:
-  #   - account: 
-  #   - region: 
-  #   - cwl: 
-  #   - cwl-access-level: 
+  #     account: 
+  #     region: 
+  #     cwl: 
+  #     cwl-access-level: 
   central-operations-services:
     account: operations
     region: ca-central-1
@@ -101,15 +101,15 @@ global-options:
   # @section: central-log-services
   # @description:
   # @settings:
-  #   - account: 
-  #   - region: 
-  #   - s3-retention: 
-  #   - cwl-glbl-exclusions: 
-  #   - cwl-exclusions: 
-  #   - ssm-to-s3: 
-  #   - ssm-to-cwl: 
-  #   - sns-excl-regions: 
-  #   - sns-subscription-emails: 
+  #     account: 
+  #     region: 
+  #     s3-retention: 
+  #     cwl-glbl-exclusions: 
+  #     cwl-exclusions: 
+  #     ssm-to-s3: 
+  #     ssm-to-cwl: 
+  #     sns-excl-regions: 
+  #     sns-subscription-emails: 
   #     - High: 
   #     - Medium: 
   #     - Low: 
@@ -140,7 +140,7 @@ global-options:
   # @section: reports
   # @description:
   # @settings:
-  #   - cost-and-usage-report:
+  #     cost-and-usage-report:
   #     - additional-schema-elements: 
   #     - compression
   #     - format
@@ -166,10 +166,10 @@ global-options:
   # @section: vpc-flow-logs
   # @description:
   # @settings:
-  #   - filter:
-  #   - interval:
-  #   - default-format:
-  #   - custom-fields:
+  #     filter:
+  #     interval:
+  #     default-format:
+  #     custom-fields:
   vpc-flow-logs:
     filter: ALL
     interval: 60
@@ -202,7 +202,7 @@ global-options:
   # @section: security-hub-frameworks
   # @description:
   # @settings:
-  #   -  
+  #      
   security-hub-frameworks:
     standards:
       - name: AWS Foundational Security Best Practices v1.0.0
@@ -224,7 +224,7 @@ global-options:
   # @section: iam-password-policies
   # @description:
   # @settings:
-  #   - 
+  #     
   iam-password-policies:
     allow-users-to-change-password: true
     hard-expiry: false
@@ -616,6 +616,7 @@ global-options:
   # @section: aws-config
   # @description:
   # @settings:
+  # 
   aws-config:
     managed-rules:
       defaults:
@@ -776,10 +777,11 @@ global-options:
 # @section: mandatory-account-configs
 # @description: 
 # @settings:
-#   - shared-network
-#   - master
-#   - log-archive
-#   - security
+#     shared-network
+#     master
+#     log-archive
+#     security
+
 mandatory-account-configs:
   
   # @section: shared-network
